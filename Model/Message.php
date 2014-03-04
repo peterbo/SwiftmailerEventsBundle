@@ -29,6 +29,7 @@ class Message extends Swift_Message {
 
     public function setAdditionalData($key, $value) {
         $this->additionalData[$key] = $value;
+	    return $this;
     }
 
     public function hasAdditionalData($key) {
